@@ -1,0 +1,105 @@
+{% extends 'base.html' %}
+{% block title %}  Cars World {% endblock title %}
+{% block body %}
+<div class="container-fluid my-1 mx-3  py-4">
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner ">
+    <div class="carousel-item active">
+      <img src="/static/img/img.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>These are high performance cars</h5>
+        <p>These are very fast and lightweight cars </p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="/static/img/img2.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 style="color:black">Super Utility Vechile</h5>
+        <p style="color:black"><b>These cars have less performance and used for daily purposes</b></p>
+      </div>
+    </div>
+
+    <div class="carousel-caption d-none d-md-block">
+
+
+</div>
+
+
+    <div class="carousel-item">
+      <img src="/static/img/img3.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 style="color:black">Sedan Cars</h5>
+        <p style="color:black"><b>Cars with Large boot space and slopping rooftop</b></p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+<h2 class="text-center"> Types of modes </h2>
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 px-4">
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="/static/img/tumb1.jpg">
+
+            <div class="card-body">
+              <p class="card-text"> Changing lights are legal</p>
+              <div class="d-flex justify-content-between align-items-center">
+
+                <small class="text-muted">No penalty is issued </small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="/static/img/tumb2.jpg">
+            <div class="card-body">
+              <p class="card-text">Completely changing paint is ILLEGAL in India</p>
+              <div class="d-flex justify-content-between align-items-center">
+
+                <small class="text-muted">Govt can issue heavy fine or can seize vechile</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="/static/img/tumb3.jpg">
+            <div class="card-body">
+              <p class="card-text">Changing structure of cars is ILLEGAL. As factory Structure change can lead to many problem in identyfing cars</p>
+              <div class="d-flex justify-content-between align-items-center">
+
+                <small class="text-muted">Govt can issue heavy fine or can seize vechile</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="/static/img/tumb4.jpg">
+            <div class="card-body">
+              <p class="card-text">Changing Tyres and Alloys are Legal in India</p>
+              <div class="d-flex justify-content-between align-items-center">
+
+                <small class="text-muted">No penalty is issued</small>
+              </div>
+            </div>
+          </div>
+        </div>
+</div>
+{% endblock body %}
